@@ -701,8 +701,10 @@
       .nav-menu button{width:100%;text-align:left;padding:12px 14px;border-radius:12px}
       .nav-contact{margin-left:0}
       .panel-inner{padding-top:24px}
-      .home-grid{grid-template-columns:1fr;gap:22px;text-align:center}.home-meta{display:flex}.home-copy h1,.home-copy .lead{margin-inline:auto}.home-actions,.home-meta{justify-content:center}
-      .visual-stage{display:none}
+      .home-grid{grid-template-columns:1fr;gap:20px;text-align:center}.home-meta{display:flex}.home-copy h1,.home-copy .lead{margin-inline:auto}.home-actions,.home-meta{justify-content:center}
+      .visual-stage{order:-1;min-height:0;margin-bottom:4px}
+      .orbit,.float-card{display:none}
+      .portrait-card{width:150px}
       .about-grid{grid-template-columns:210px 1fr;gap:30px}.profile-facts{grid-template-columns:1fr 1fr}.fact-card:nth-child(3){grid-column:1/-1}
       .capability-grid{grid-template-columns:1fr}.capability{display:grid;grid-template-columns:38px 1fr;column-gap:12px}.capability h3{margin-top:0}.capability p{grid-column:2}
       .projects-layout{grid-template-columns:1fr;grid-auto-rows:auto}.project-side.documentation-panel{display:flex;min-height:490px;height:490px;max-height:490px}.project-shell{height:490px;min-height:0}
@@ -718,10 +720,13 @@
       .container{width:min(calc(100% - 28px),var(--container))}
       .panel-inner{padding:18px 0 68px;align-items:flex-start}
       .panel-scroll{padding-top:8px}
-      .home-grid{min-height:calc(100dvh - var(--nav-h) - 95px);display:flex;align-items:center}.home-copy h1{font-size:clamp(40px,12vw,57px)}.home-copy .lead{font-size:15px}.availability{margin-bottom:19px}
+      .home-grid{min-height:calc(100dvh - var(--nav-h) - 95px);display:flex;flex-direction:column;align-items:center}.home-copy,.visual-stage{width:100%}.home-copy h1{font-size:clamp(40px,12vw,57px)}.home-copy .lead{font-size:15px}.availability{margin-bottom:19px}
       .home-actions .btn{flex:1;min-width:145px}.home-meta{font-size:10px;gap:11px 18px}
-      .about-grid{grid-template-columns:1fr}.about-portrait{display:none}.about-copy h2{font-size:36px}.profile-facts{grid-template-columns:1fr 1fr}.profile-facts .fact-card:nth-child(5) strong,.profile-facts .fact-card:nth-child(6) strong{font-size:11px}.capability-grid{grid-template-columns:1fr}.skills-row{margin-bottom:6px}
-      .project-shell{height:520px;min-height:0}.project-side.documentation-panel{height:520px;max-height:520px}.project-slide{padding:25px 23px}.project-slide h2{font-size:31px}.project-desc{font-size:12px}.project-result{font-size:11px}.project-footer{align-items:flex-start;flex-direction:column}.project-controls{margin-top:12px}
+      .about-grid,.panel[data-name="Data Diri"] .about-grid{grid-template-columns:1fr;gap:16px;transform:none}
+      .about-portrait,.panel[data-name="Data Diri"] .about-portrait{max-width:160px;margin:0 auto}
+      .about-copy h2{font-size:36px}.profile-facts{grid-template-columns:1fr 1fr}.profile-facts .fact-card:nth-child(5) strong,.profile-facts .fact-card:nth-child(6) strong{font-size:11px}.capability-grid{grid-template-columns:1fr}.skills-row{margin-bottom:6px}
+      .project-shell{height:520px;min-height:0}.project-side.documentation-panel{height:520px;max-height:520px;overflow-y:auto;-webkit-overflow-scrolling:touch}.project-slide{padding:22px 20px;overflow-y:auto;-webkit-overflow-scrolling:touch}.project-slide h2{font-size:29px}.project-desc{font-size:12px}.project-result{font-size:11px}.project-footer{align-items:flex-start;flex-direction:column}.project-controls{margin-top:12px}
+      .contribution-list{gap:6px}
       .documentation-content .evidence-grid{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr)}.documentation-content .evidence-card img{height:190px}.documentation-content .evidence-caption{padding:8px 9px}.documentation-content .evidence-caption span{display:none}
 
       .experience-head h2{font-size:35px}.experience-head .lead{font-size:13px}.experience-grid{gap:12px}.education-card{display:block;padding:21px}.education-card h3{font-size:22px;margin-top:20px}.education-meta{margin-top:18px}
